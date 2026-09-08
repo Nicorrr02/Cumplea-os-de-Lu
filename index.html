@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Año ♡</title>
+  <meta name="description" content="Un scrapbook digital que recorre el último año.">
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="media/icono/spiderus.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+<body>
+
+<!-- Navegación por mes (la rellena script.js dinámicamente) -->
+<nav id="mes-nav" class="mes-nav" aria-label="Ir a un mes"></nav>
+
+<!-- Control de música persistente -->
+<div id="music-control" class="music-control" hidden>
+  <button id="music-toggle" class="music-toggle" aria-label="Reproducir música" aria-pressed="false">
+    <span class="music-toggle__icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" class="icon-play"><path d="M6 4.5v15l13-7.5-13-7.5z"/></svg>
+      <svg viewBox="0 0 24 24" class="icon-pause"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+    </span>
+  </button>
+  <input type="range" id="music-volume" class="music-volume" min="0" max="1" step="0.01" aria-label="Volumen de la música">
+</div>
+<audio id="bg-music" loop preload="none">
+  <source src="media/music/LuAcrossTheStars.mp4" type="audio/mpeg">
+</audio>
+
+<!-- Volver al inicio -->
+<button id="back-to-top" class="back-to-top" aria-label="Volver al inicio" hidden>
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5l-7 7h4v7h6v-7h4z"/></svg>
+</button>
+
+<!-- Barra de progreso del álbum -->
+<div class="progress-rail" aria-hidden="true"><div class="progress-rail__fill" id="progress-fill"></div></div>
+
+<main id="app">
+
+  <!-- ===================== PORTADA ===================== -->
+  <section id="portada" class="portada">
+    <div class="portada__deco" aria-hidden="true">
+      <img class="deco deco--1" src="media/cover/got.png" alt="">
+      <img class="deco deco--2" src="media/cover/mojara.png" alt="">
+      <img class="deco deco--3" src="media/cover/oyp.png" alt="">
+      <img class="deco deco--4" src="media/cover/hxh.png" alt="">
+      <img class="deco deco--5" src="media/cover/vaca.png" alt="">
+    </div>
+
+    <div class="portada__contenido">
+      <p class="portada__eyebrow">un álbum para ti</p>
+      <h1 class="portada__titulo">Tu año<span class="portada__corazon"> ♡</span></h1>
+      <p class="portada__intro">
+        Doce meses, un montón de recuerdos y algunas cosas que quiero que nunca olvides.
+        <br>Desplázate despacio, como quien pasa las páginas de un álbum.
+      </p>
+      <img id="portadaImagen" src="media/cover/LuCover.jpg" alt="Portada del álbum">
+      <button id="btn-comenzar" class="btn-pill">
+        <span>Comenzar</span> <span aria-hidden="true">♡</span>
+      </button>
+      <p class="portada__hint" aria-hidden="true">desliza para empezar ↓</p>
+    </div>
+  </section>
+
+  <!-- Los capítulos de los meses se insertan aquí dinámicamente por JS -->
+  <div id="capitulos"></div>
+
+  <!-- ===================== MENSAJE FINAL ===================== -->
+  <section id="final" class="final">
+    <div class="final__petalos" aria-hidden="true" id="final-petalos"></div>
+    <div class="final__contenido">
+      <p class="final__eyebrow">Todo este recorrido termina aquí</p>
+      <h2 class="final__titulo">Gracias por este año</h2>
+      <p class="final__texto" data-editable="mensaje-final">
+        Gracias por permitirme vivir este último año contigo. Por cada risa, cada plan improvisado
+        y cada momento pequeño que terminó siendo de los que más recuerdo.
+        <br><br>
+        Espero seguir a tu lado para muchos años más de historias como estas.
+        <br><br>
+        Feliz cumpleaños ♡
+      </p>
+      <p class="final__firma">— con cariño Nicor uwu</p>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
