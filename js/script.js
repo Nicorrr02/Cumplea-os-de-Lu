@@ -225,7 +225,7 @@ const months = [
       { type: "foto", src: "media/mayo/LuMangus.jpg", caption: "13 de mayo - Nos gusto mucho" },
       { type: "foto", src: "media/mayo/LuLibardo.jpeg", caption: "19 de mayo - OTRO cumpleaños" },
       { type: "foto", src: "media/mayo/LuLibardoCumple.jpg", caption: "19 de mayo - Fotito con el quinciañero" },
-      { type: "foto", src: "media/mayo/LuNicoIguales.png", caption: "22 de mayo - Ni poniendonos de acuerdo vestiriamos igual" },
+      { type: "foto", src: "media/mayo/LuNicoIguales.PNG", caption: "22 de mayo - Ni poniendonos de acuerdo vestiriamos igual" },
       { type: "foto", src: "media/mayo/LuEjecucion.jpeg", caption: "23 de mayo - Primera parte: Ejecucion del plan" },
       { type: "foto", src: "media/mayo/LuDisfruto.jpeg", caption: "23 de mayo - Segunda parte: Disfrutando el momento" },
       { type: "foto", src: "media/mayo/LuPiscina.jpg", caption: "23 de mayo - Mojarras unidas" },
