@@ -1,4 +1,4 @@
-# Nuestro Año ♡
+# Tu Año ♡
 
 Scrapbook digital interactivo, hecho con HTML5 + CSS3 + JavaScript vanilla (sin frameworks, sin backend).
 
@@ -8,7 +8,7 @@ Opción simple: abre `index.html` directamente en el navegador (doble clic).
 
 Opción recomendada (para que los videos/audio carguen sin problemas de CORS):
 ```
-cd nuestro-anio
+cd CumpleLu
 python3 -m http.server 8000
 ```
 y abre `http://localhost:8000`.
