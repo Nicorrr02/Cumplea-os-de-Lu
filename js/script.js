@@ -95,7 +95,7 @@ const months = [
       { type: "foto", src: "media/noviembre/LuQbano.jpg", caption: "17 de noviembre - Lo mejor de comer, es comer junto a Lu" },
       { type: "nota", text: "Otro viaje" },
       { type: "foto", src: "media/noviembre/LuTerminal.jpeg", caption: "22 de noviembre - Partimos hacia un destino desconocido (Timbio)" },
-      { type: "video", src: "media/noviembre/LuTodosBusTimbio.MOV", caption: "22 de noviembre - Video recordatorio omaga" },
+      { type: "video", src: "media/noviembre/LuTodosBusTimbio.mp4", caption: "22 de noviembre - Video recordatorio omaga" },
       { type: "foto", src: "media/noviembre/LuVIajeTimbio.jpg", caption: "22 de noviembre - Side eye" },
       { type: "foto", src: "media/noviembre/LuFokinOveja.jpeg", caption: "22 de noviembre - Una fokin oveja" },
       { type: "foto", src: "media/noviembre/LuPerritoPequeño.jpeg", caption: "22 de noviembre - Y un perrito pequeño" },
@@ -119,7 +119,7 @@ const months = [
       { type: "foto", src: "media/noviembre/LuSebasCantando.jpeg", caption: "22 de noviembre - Sebitasss" },
       { type: "foto", src: "media/noviembre/LuYJeshuaCantandop.jpeg", caption: "22 de noviembre - En duetooo omago" },
       { type: "nota", text: "Tambien para bailar" },
-      { type: "video", src: "media/noviembre/LuPerreoNoVerConFamilia.MOV", caption: "22 de noviembre - Ver con precaucion" },
+      { type: "video", src: "media/noviembre/LuPerreoNoVerConFamilia.mp4", caption: "22 de noviembre - Ver con precaucion" },
       
 
     ]
@@ -131,7 +131,7 @@ const months = [
     memories: [
       { type: "foto", src: "media/diciembre/LuGym.jpg", caption: "4 de diciembre - Iniciamos fits" },
       { type: "nota", text: "TE AMOOOOO." },
-      { type: "foto", src: "media/diciembre/LuSustentacion.jpg", caption: "10 de diciembre - Sustentacion con Libargod" },
+      { type: "foto", src: "media/diciembre/LuSustentacion.JPG", caption: "10 de diciembre - Sustentacion con Libargod" },
       { type: "foto", src: "media/diciembre/LuSalida.jpeg", caption: "11 de diciembre - Ultima salida del semestre" },
       { type: "video", src: "media/diciembre/LuRaices.mp4", caption: "11 de dicembre - Recordando las raices" },
       { type: "foto", src: "media/diciembre/LuDeslumbrante.jpeg", caption: "11 de diciembre - Eres mas deslumbrante que la propia luz" },
