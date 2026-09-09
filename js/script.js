@@ -349,6 +349,8 @@ function crearRecuerdo(memoria, index){
       img.alt = memoria.caption || "Fotografía del recuerdo";
       img.loading = "lazy";
       img.decoding = "async";
+      img.classList.add("es-clicable");
+      img.addEventListener("click", () => abrirLightbox(memoria.src, img.alt));
       media.appendChild(img);
       el.appendChild(media);
       if (memoria.caption) el.appendChild(crearCaption(memoria.caption));
@@ -361,6 +363,8 @@ function crearRecuerdo(memoria, index){
       img.src = memoria.src;
       img.alt = memoria.caption || "GIF del recuerdo";
       img.loading = "lazy";
+      img.classList.add("es-clicable");
+      img.addEventListener("click", () => abrirLightbox(memoria.src, img.alt));
       media.appendChild(img);
       const tag = document.createElement("span");
       tag.className = "recuerdo__etiqueta";
@@ -540,6 +544,14 @@ function activarNavegacion(){
 
   const marcarActivo = (key) => {
     botones.forEach(b => b.classList.toggle("is-active", b.dataset.mes === key));
+    const activo = nav.querySelector(".mes-nav__btn.is-active");
+    if (activo){
+      // Centra el botón activo dentro de la barra (útil en celular, donde no caben todos).
+      const navRect = nav.getBoundingClientRect();
+      const btnRect = activo.getBoundingClientRect();
+      const offset = (btnRect.left + btnRect.width / 2) - (navRect.left + navRect.width / 2);
+      nav.scrollTo({ left: nav.scrollLeft + offset, behavior: "smooth" });
+    }
   };
 
   const seccionObserver = new IntersectionObserver((entries) => {
@@ -710,6 +722,49 @@ function activarLiberacionDeVideos(){
 }
 
 /* =========================================================
+   LIGHTBOX (abrir foto/gif en grande)
+   ========================================================= */
+
+let lightboxEl = null;
+
+function activarLightbox(){
+  lightboxEl = document.createElement("div");
+  lightboxEl.className = "lightbox";
+  lightboxEl.hidden = true;
+  lightboxEl.innerHTML = `
+    <button class="lightbox__cerrar" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <img class="lightbox__img" alt="">
+  `;
+  document.body.appendChild(lightboxEl);
+
+  const cerrar = () => {
+    lightboxEl.hidden = true;
+    lightboxEl.classList.remove("is-visible");
+    lightboxEl.querySelector(".lightbox__img").src = "";
+    document.body.classList.remove("lightbox-abierto");
+  };
+
+  lightboxEl.addEventListener("click", (e) => {
+    if (e.target === lightboxEl || e.target.closest(".lightbox__cerrar")) cerrar();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !lightboxEl.hidden) cerrar();
+  });
+}
+
+function abrirLightbox(src, alt){
+  if (!lightboxEl) return;
+  const img = lightboxEl.querySelector(".lightbox__img");
+  img.src = src;
+  img.alt = alt || "";
+  lightboxEl.hidden = false;
+  document.body.classList.add("lightbox-abierto");
+  requestAnimationFrame(() => lightboxEl.classList.add("is-visible"));
+}
+
+/* =========================================================
    INICIO
    ========================================================= */
 
@@ -722,4 +777,5 @@ document.addEventListener("DOMContentLoaded", () => {
   crearPetalos();
   activarVolverArriba();
   activarLiberacionDeVideos();
+  activarLightbox();
 });
