@@ -384,6 +384,7 @@ function crearRecuerdo(memoria, index){
       video.appendChild(source);
       // Si el archivo de video todavía no existe, evitamos que un error rompa la página.
       video.addEventListener("error", () => {
+        if (video.dataset.liberando === "true") return; // descarga intencional, no es un error real
         media.classList.add("recuerdo__media--sin-video");
       }, true);
       media.appendChild(video);
