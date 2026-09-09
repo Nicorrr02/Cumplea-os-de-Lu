@@ -46,8 +46,8 @@ const months = [
       { type: "foto", src: "media/septiembre/LuCute.jpeg", caption: "14 de septiembre - So cute" },
       { type: "foto", src: "media/septiembre/LuChicosComiendoPastel.jpeg", caption: "14 de septiembre - Comiendo pastel ñam ñam" },
       { type: "foto", src: "media/septiembre/LuJeshuaPortada.jpeg", caption: "14 de septiembre - Parece cover de un album" },
-      { type: "video", src: "media/septiembre/LuLego.MOV", poster: "media/julio/video-poster.svg", caption: "26 de septiembre - Nuestro primer lego Omaigo" },
-      { type: "video", src: "media/septiembre/LuOtro.MOV", caption: "26 de septiembre - ¿Otro? jejeje" },
+      { type: "video", src: "media/septiembre/LuLego.mp4", poster: "media/julio/video-poster.svg", caption: "26 de septiembre - Nuestro primer lego Omaigo" },
+      { type: "video", src: "media/septiembre/LuOtro.mp4", caption: "26 de septiembre - ¿Otro? jejeje" },
     ] 
   },
   {
@@ -56,7 +56,7 @@ const months = [
     closing: "Octubre se fue casi sin avisar...",
     memories: [
       { type: "foto", src: "media/octubre/LuAlbum.jpg", caption: "10 de octubre - llenando el album por primera vez" },
-      { type: "video", src: "media/octubre/LuComoQueDiscord.MOV", caption: "17 de octubre - ¿comó que discord?"  },
+      { type: "video", src: "media/octubre/LuComoQueDiscord.mp4", caption: "17 de octubre - ¿comó que discord?"  },
       { type: "foto", src: "media/octubre/LuJuli.jpg", caption: "17 de octubre - Tu y Juli" },
       { type: "nota", text: "Te amo mucho ¿Sabias?" },
       { type: "foto", src: "media/octubre/LuChicas.jpg", caption: "17 de octubre - Todas las chicas juntas" },
@@ -151,10 +151,10 @@ const months = [
     memories: [
       { type: "foto", src: "media/enero/LuNicoSilviaCarnaval.jpeg", caption: "10 de enero - Volvimos a vernos, ahora para pasar carnavales juntos" },
       { type: "foto", src: "media/enero/LuTrenzas.jpg", caption: "10 de enero - Muy linda con trenzas" },
-      { type: "video", src: "media/enero/LuCarnavalCarioca.mov", caption: "10 de enero - Talvez abrir la boca no era la mejor idea" },
-      { type: "video", src: "media/enero/LuPiano.mov", caption: "12 de enero - Como artistas, somos buenos ingenieros" },
+      { type: "video", src: "media/enero/LuCarnavalCarioca.mp4", caption: "10 de enero - Talvez abrir la boca no era la mejor idea" },
+      { type: "video", src: "media/enero/LuPiano.mp4", caption: "12 de enero - Como artistas, somos buenos ingenieros" },
       { type: "foto", src: "media/enero/LuSegundaPlanta.jpg", caption: "30 de enero - Tu segunda planta de lego" },
-      { type: "video", src: "media/enero/LuSegundoLego.MOV", caption: "30 de enero - Un pequeñoo resumen" },
+      { type: "video", src: "media/enero/LuSegundoLego.mp4", caption: "30 de enero - Un pequeñoo resumen" },
       { type: "foto", src: "media/enero/LuCumpleañeros.jpeg", caption: "30 de enero - Para terminar el dia, otra celebracion" },
       { type: "foto", src: "media/enero/LuCumpleJeshuaLaura.jpg", caption: "30 de enero - Fotito para el recuerdo" },
     ]
@@ -167,7 +167,7 @@ const months = [
       { type: "foto", src: "media/febrero/Lu14Febrero.jpeg", caption: "14 de febrero - Recreamos nuestra primera cita, en el mismo lugar" },
       { type: "foto", src: "media/febrero/LuHermosa14Febrero.jpg", caption: "14 de febrero - Que hermosura por Dios" },
       { type: "foto", src: "media/febrero/LuComida14Febrero.jpg", caption: "14 de febrero - Rico rico" },
-      { type: "video", src: "media/febrero/LuSuperHermosaVideo14Febrero.MOV", caption: "14 de febrero - Simplemente hermosa" },
+      { type: "video", src: "media/febrero/LuSuperHermosaVideo14Febrero.mp4", caption: "14 de febrero - Simplemente hermosa" },
       { type: "foto", src: "media/febrero/LuBerlin.jpeg", caption: "20 de febrero - Con un gordito" },
       { type: "foto", src: "media/febrero/LuBeso.jpeg", caption: "20 de febrero - Otro muak" },
       { type: "foto", src: "media/febrero/LuViaje1.jpeg", caption: "28 de febrero - Viajecito familiar" },
@@ -201,7 +201,7 @@ const months = [
       { type: "nota", text: "Querido diario: Amo a Lu." },
       { type: "foto", src: "media/abril/LuRegidora.jpg", caption: "3 de abril - Lu regidora, toda una regia" },
       { type: "foto", src: "media/abril/LuRoblos.jpg", caption: "6 de abril - Un poquito de roblos" },
-      { type: "video", src: "media/abril/LuOhSheIsSoFBeatiful.MOV", caption: "7 de abril - Yes, U are" },
+      { type: "video", src: "media/abril/LuOhSheIsSoFBeatiful.mp4", caption: "7 de abril - Yes, U are" },
       { type: "foto", src: "media/abril/LuCocinandoDoriLocos.jpeg", caption: "7 de abril - Nuestros primeros dorilocos" },
       { type: "foto", src: "media/abril/LuConMono.jpg", caption: "16 de abril - Mono mendigando amor" },
       { type: "foto", src: "media/abril/LuPizza.jpeg", caption: "24 de abril - Pizza rico rico" },
@@ -256,7 +256,7 @@ const months = [
       { type: "foto", src: "media/junio/LuTacos.jpeg", caption: "13 de junio - Comiste taquitos" },
       { type: "foto", src: "media/junio/LuSeleccion.jpeg", caption: "17 de junio - Modo seleccion" },
       { type: "foto", src: "media/junio/LuOMGSuperHermosaLikeHollyShi.jpg", caption: "18 de junio - Hermosa mujer, bonito lugar, pero ..." },
-      { type: "video", src: "media/junio/LuLugarSuperAesthetic.MOV",  caption: "18 de junio - Una musica un poco particular" },
+      { type: "video", src: "media/junio/LuLugarSuperAesthetic.mp4",  caption: "18 de junio - Una musica un poco particular" },
       { type: "foto", src: "media/junio/LuItTakesTwo.jpeg", caption: "21 de junio - Nos pasamos tremendo juego" },
       { type: "nota", text: "Te amo, pero no todo fue bonito" },
       { type: "foto", src: "media/junio/LuHombro.jpeg", caption: "26 de junio - Hubo un arbol que se puso de canson" },
@@ -574,6 +574,14 @@ function activarMusica(){
   const portada = document.getElementById("portada");
   const btnComenzar = document.getElementById("btn-comenzar");
 
+  // iOS ignora los cambios de volumen hechos por JS (solo permite
+  // los botones físicos), así que el slider ahí no serviría de nada.
+  const esIOS = /iP(hone|ad|od)/.test(navigator.userAgent) ||
+    (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+  if (esIOS) {
+    volumen.hidden = true;
+  }
+
   // El volumen elegido se recuerda entre visitas.
   const volumenGuardado = parseFloat(localStorage.getItem("nuestro-anio-volumen"));
   const volumenInicial = Number.isFinite(volumenGuardado) ? volumenGuardado : 0.6;
@@ -662,6 +670,46 @@ function activarVolverArriba(){
 }
 
 /* =========================================================
+   LIBERACIÓN DE MEMORIA DE VIDEOS
+   Descarga el src de los videos que salen de la pantalla para
+   que el navegador libere su buffer, y lo restaura si vuelves.
+   Evita que la pestaña se quede sin memoria y se recargue sola.
+   ========================================================= */
+
+function activarLiberacionDeVideos(){
+  const videos = Array.from(document.querySelectorAll("#capitulos video"));
+  if (!videos.length || !("IntersectionObserver" in window)) return;
+
+  videos.forEach(video => {
+    const source = video.querySelector("source");
+    if (source) video.dataset.srcOriginal = source.src;
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      const source = video.querySelector("source");
+      if (!source) return;
+
+      if (!entry.isIntersecting) {
+        if (!video.paused) video.pause();
+        if (source.hasAttribute("src")) {
+          video.dataset.liberando = "true";
+          source.removeAttribute("src");
+          video.load();
+          delete video.dataset.liberando;
+        }
+      } else if (!source.hasAttribute("src") && video.dataset.srcOriginal) {
+        source.src = video.dataset.srcOriginal;
+        video.load();
+      }
+    });
+  }, { rootMargin: "150% 0px 150% 0px" });
+
+  videos.forEach(v => observer.observe(v));
+}
+
+/* =========================================================
    INICIO
    ========================================================= */
 
@@ -673,4 +721,5 @@ document.addEventListener("DOMContentLoaded", () => {
   activarMusica();
   crearPetalos();
   activarVolverArriba();
+  activarLiberacionDeVideos();
 });
